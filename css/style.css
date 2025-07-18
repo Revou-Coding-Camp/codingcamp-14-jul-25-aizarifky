@@ -1,0 +1,232 @@
+/* Start */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .logo {
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* .navbar ul li {
+  margin-left: 20px;
+} */
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.navbar li a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+}
+.navbar li a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1366px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* 
+Our Profile Section */
+.our-profile {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.our-profile h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portofolio {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.portofolio h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-card h3 {
+  font-size: 1.3em;
+  margin: 15px 0 5px;
+  color: #444;
+}
+
+.portfolio-card p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/* Message Section */
+.message {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  border: 1px solid #999;
+  padding: 15px;
+  background: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+  font-size: 14px;
+}
+
+.logo {
+  width: 64px; 
+  height: 64px;       
+  background-image: url('../assets/logo.png'); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+

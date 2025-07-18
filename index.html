@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+   <!-- CSS Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 </head>
 <body>
-    
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-profile">Our Profile</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1>Halo.. Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama - Aizarifky</p>
+    <div class="banner"><img src="assets/background.png" alt="Banner Image">
+    </div>
+  </section>
+
+<!-- Our Profile Section -->
+<section id="our-profile" class="our-profile">
+  <h2>Our Profile</h2>
+  <div class="locations">
+    <div class="circle" style="background-image: url('assets/logo.png');"></div>
+    <div class="circle" style="background-image: url('assets/logo2.png');"></div>
+    <div class="circle" style="background-image: url('assets/logo3.png');"></div>
+  </div>
+</section>
+
+<section id="portofolio" class="portofolio">
+  <h2>Portofolio (Misal)</h2>
+  <div class="portfolio-container">
+    <div class="portfolio-card">
+      <img src="assets/ui.jpg" alt="Web Design">
+      <h3>Web Design</h3>
+      <p>Desain UI/UX modern dan responsif.</p>
+    </div>
+    <div class="portfolio-card">
+      <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80" alt="Mobile App">
+      <h3>Mobile App</h3>
+      <p>Aplikasi mobile dengan performa tinggi.</p>
+    </div>
+    <div class="portfolio-card">
+      <img src="assets/dashboard.png" alt="Data Dashboard">
+      <h3>Data Dashboard</h3>
+      <p>Visualisasi data interaktif dan informatif.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Message Us Section -->
+<section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="message-container">
+      <form id="messageForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label for="tgl">Tanggal Lahir:</label>
+        <input type="date" id="tgl" name="tgl" required>
+
+        <label>Jenis Kelamin:</label>
+        <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="result" id="formResult">
+        <!-- Output JavaScript akan ditampilkan di sini -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Created by Aizarifky
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
